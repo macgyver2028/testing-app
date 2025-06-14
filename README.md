@@ -1,20 +1,16 @@
 # Application Deployment Guide
 
 ## Prerequisites
-- AWS account with appropriate permissions
-- Docker installed locally
+- AWS account with credentials and secrets setup.
 - Terraform installed locally
 - GitHub account
-- AWS CLI configured with credentials
+
+## Optional
+- Docker installed locally (For Testing)
 
 ## Setup Instructions
 
 1. **Clone the Repository**
-```bash
-   
-   git clone <repository-url>
-   cd <repository-directory>
-```
 
 2. **Configure AWS Credentials**
    - Create an AWS IAM user with necessary permissions
@@ -57,11 +53,7 @@
 ```
 
 2. **Access the Application**
-   - The service runs in a private subnet
-   - To test, you may need to:
-     - Set up a bastion host
-     - Configure a load balancer
-     - Use AWS Systems Manager Session Manager
+   - The service is setup with a load balancer.  Test by making http request to loadbalancer DNS address.
 
 3. **Verify Application Health**
    - Check CloudWatch logs:
