@@ -1,0 +1,8 @@
+README.md
+!**/.gitignore
+!.git/HEAD
+!.git/config
+!.git/packed-refs
+!.git/refs/heads/**
+!.github
+*/terraform
